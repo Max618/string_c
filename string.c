@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+//TAMANHO STRING
 int strlen(char *s){
     int i = 0;
     while(s[i] != '\0'){
@@ -9,6 +10,7 @@ int strlen(char *s){
     return i;
 }
 
+//COPIAR STRING
 void strcpy(char *destino, char *origem){
     int i = 0;
     while(origem[i] != '\0'){
@@ -18,6 +20,7 @@ void strcpy(char *destino, char *origem){
     }
 }
 
+//COMPARAR STRING
 int strcmp(char *s1, char *s2){
     int i = 0;
     while(s1[i] != '\0'){
@@ -32,6 +35,7 @@ int strcmp(char *s1, char *s2){
     return 0;
 }
 
+//INVERTER STRING
 void strrev(char *s){
     int i, j = 0, tam = strlen(s);
     char temp;
@@ -44,6 +48,7 @@ void strrev(char *s){
     }
 }
 
+//LETRAS MAIUSCULAS
 void strupr(char *s){
     int i = 0;
     while(s[i] != '\0'){
@@ -53,6 +58,7 @@ void strupr(char *s){
     }
 }
 
+//LETRAS MINUSCULAS
 void strlwr(char *s){
     int i = 0;
     while(s[i] != '\0'){
@@ -62,6 +68,7 @@ void strlwr(char *s){
     }
 }
 
+//CONCATENAS STRINGS
 void strcat(char *destino, char *origem){
     int i = strlen(destino);
     int j = 0;
@@ -72,6 +79,7 @@ void strcat(char *destino, char *origem){
     }
 }
 
+//CONVERTER STRING PARA CHAR RECEBIDO
 void strset(char *s, char c){
     int i = 0;
     while(s[i] != '\0'){
